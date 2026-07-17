@@ -197,3 +197,56 @@
   .hamburger { display: flex; }
   .inner { padding: 0 20px; }
 }
+
+/* ─── AHA KALYANAM LOGO ─────────────────────────────────────────── */
+.logoImage {
+  height: 65px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.logoImage {
+  height: 70px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  user-select: none;
+}
+
+.logoAha {
+  font-size: 42px;
+  font-weight: 700;
+  font-family: "Noto Serif Telugu", serif;
+  background: linear-gradient(180deg, #b30020, #7a0015);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.18);
+  letter-spacing: 0.5px;
+}
+
+.logoKalyanam {
+  font-size: 42px;
+  font-weight: 700;
+  font-family: "Noto Serif Telugu", serif;
+  background: linear-gradient(180deg, #d9a441, #a56b00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.18);
+  letter-spacing: 0.5px;
+}
+
