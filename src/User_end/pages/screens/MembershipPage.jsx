@@ -256,7 +256,7 @@ export default function MembershipPage() {
       <footer className={styles.footer}>
         <div className={styles.footerGrid}>
           <div>
-            <div className={styles.footerBrand}>MilanSetu</div>
+            <div className={styles.footerBrand}>Aha Kalayanam</div>
             <p className={styles.footerBrandText}>
               Redefining traditional matchmaking through modern prestige and exclusive connections.
             </p>
@@ -296,7 +296,7 @@ export default function MembershipPage() {
         </div>
         <div className={styles.footerBottom}>
           <p className={styles.footerCopyright}>
-            © 2024 MilanSetu. All rights reserved. Designed for the discerning.
+            © 2024 Aha Kalyanam. All rights reserved. Designed for the discerning.
           </p>
         </div>
       </footer>

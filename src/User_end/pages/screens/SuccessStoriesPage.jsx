@@ -203,7 +203,7 @@ export default function SuccessStoriesPage() {
       <footer className={styles.footer}>
         <div className={styles.footerGrid}>
           <div>
-            <div className={styles.footerBrand}>MilanSetu</div>
+            <div className={styles.footerBrand}>Aha kalyanam</div>
             <p className={styles.footerBrandText}>
               Curating exceptional unions for the world's most discerning individuals since 1992.
             </p>
@@ -236,7 +236,7 @@ export default function SuccessStoriesPage() {
         </div>
         <div className={styles.footerBottom}>
           <p className={styles.footerCopyright}>
-            © 2024 Heritage Elite Matrimony. All rights reserved. Designed for the discerning.
+            © 2024 Aha Kalyanam. All rights reserved. Designed for the discerning.
           </p>
         </div>
       </footer>

@@ -199,3 +199,23 @@
     display: none;
   }
 }
+.sidebarLogo{
+    width:180px;
+    height:auto;
+    display:block;
+    margin:0 auto 12px;
+    object-fit:contain;
+}
+
+.logoBlock{
+    text-align:center;
+    padding:20px 12px;
+}
+
+.logoTagline{
+    font-size:12px;
+    font-weight:600;
+    color:#b8860b;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}

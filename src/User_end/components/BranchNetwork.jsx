@@ -27,7 +27,7 @@ export default function BranchNetwork() {
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>
-            Our Physical <span className={styles.titleAccent}>Presence</span>
+            Aha Kalayanam <span className={styles.titleAccent}>Branch Network</span>
           </h2>
         </div>
 
@@ -35,22 +35,32 @@ export default function BranchNetwork() {
           {branches.map((branch) => (
             <div key={branch.id} className={styles.card}>
               <div className={styles.iconWrapper}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
               </div>
+
               <h3 className={styles.cityName}>{branch.city}</h3>
+
               <p className={styles.address}>{branch.address}</p>
+
               <span className={styles.phone}>{branch.phone}</span>
             </div>
           ))}
         </div>
 
         <div className={styles.bannerWrapper}>
-          <img 
-            src="https://images.unsplash.com/photo-1570160897040-30430ade2218?w=1400&q=80" 
-            alt="Gateway of India at sunset" 
+          <img
+            src="https://images.unsplash.com/photo-1570160897040-30430ade2218?w=1400&q=80"
+            alt="Aha Kalayanam Branch Network"
             className={styles.bannerImage}
           />
         </div>

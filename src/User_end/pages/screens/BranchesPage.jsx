@@ -219,10 +219,10 @@ export default function BranchesPage() {
       <footer className={styles.footer}>
         <div className={styles.footerGrid}>
           <div>
-            <div className={styles.footerBrand}>MilanSetu</div>
-            <p className={styles.footerBrandText}>
-              Exquisite matchmaking for those who believe that a life partnership is the ultimate legacy.
-            </p>
+            <div className={styles.footerBrand}>Aha Kalayanam</div>
+<p className={styles.footerBrandText}>
+  Aha Kalayanam is dedicated to connecting hearts through trusted, secure, and meaningful matrimonial services across India and worldwide.
+</p>
             <div className={styles.footerSocials}>
               <span className={styles.footerSocialIcon}>🌐</span>
               <span className={styles.footerSocialIcon}>✉</span>
@@ -269,7 +269,7 @@ export default function BranchesPage() {
         </div>
         <div className={styles.footerBottom}>
           <p className={styles.footerCopyright}>
-            © 2024 Heritage Elite Matrimony. All rights reserved. Designed for the discerning.
+           © 2026 Aha Kalayanam. All Rights Reserved. Trusted Matrimonial Services.
           </p>
         </div>
       </footer>

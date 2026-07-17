@@ -136,3 +136,25 @@
     padding: 0 24px;
   }
 }
+
+.pageLogo {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.pageLogo {
+    width: 240px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.emblemText {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #b8860b;
+}

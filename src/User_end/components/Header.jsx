@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from '../pages/styles/header.module.css';
-import logo from '../../assets/User_end_assets/aha-kalyanam-logo.png';
+import logo from "../../assets/User_end_assets/aha-header-logo.png";
 
 const navLinks = [
   { label: 'HOME', href: '#home' },
@@ -40,13 +40,13 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.inner}>
 
-        {/* Logo */}
-        <a href="#home" className={styles.logo}>
-        <a href="#home" className={styles.logo}>
-  <span className={styles.logoAha}>ఆహా</span>
-  <span className={styles.logoKalyanam}> కళ్యాణం</span>
+<a href="#home" className={styles.logo}>
+  <img
+    src={logo}
+    alt="Aha Kalyanam"
+    className={styles.logoImage}
+  />
 </a>
-        </a>
 
         {/* Desktop Navigation */}
         <nav className={styles.nav} aria-label="Main navigation">

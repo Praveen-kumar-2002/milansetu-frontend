@@ -1,28 +1,55 @@
 import styles from '../pages/styles/about_footer.module.css';
+import logo from "../../assets/User_end_assets/aha-footer-logo.png";
 
 export default function AboutFooter() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
+
+        {/* Top Row */}
         <div className={styles.topRow}>
-          
-          {/* Column 1: Brand */}
+
+          {/* Brand Column */}
           <div className={styles.brandCol}>
-            <div className={styles.logo}>MilanSetu</div>
+
+            <img
+              src={logo}
+              alt="Aha Kalayanam"
+              className={styles.pageLogo}
+            />
+
             <p className={styles.copyright}>
-              "© 2024 Heritage Elite Matrimony. All rights reserved. Designed for the discerning."
+              © 2026 Aha Kalayanam.
+              <br />
+              Trusted Indian Matrimonial Services.
+              <br />
+              All Rights Reserved.
             </p>
+
             <div className={styles.brandEmblem}>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={styles.emblemIcon}>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className={styles.emblemIcon}
+              >
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
               </svg>
-              <span className={styles.emblemText}>RETWEET</span>
+
+              <span className={styles.emblemText}>
+                TRUSTED MATRIMONY
+              </span>
             </div>
+
           </div>
 
-          {/* Column 2: Company */}
+          {/* Company */}
           <div className={styles.linksCol}>
             <h3 className={styles.heading}>COMPANY</h3>
+
             <ul className={styles.list}>
               <li><a href="#about" className={styles.link}>About Us</a></li>
               <li><a href="#success" className={styles.link}>Success Stories</a></li>
@@ -31,9 +58,12 @@ export default function AboutFooter() {
             </ul>
           </div>
 
-          {/* Column 3: Legal & Support */}
+          {/* Legal */}
           <div className={styles.linksCol}>
-            <h3 className={styles.heading}>LEGAL & SUPPORT</h3>
+            <h3 className={styles.heading}>
+              LEGAL & SUPPORT
+            </h3>
+
             <ul className={styles.list}>
               <li><a href="#privacy" className={styles.link}>Privacy Policy</a></li>
               <li><a href="#terms" className={styles.link}>Terms of Service</a></li>
@@ -50,9 +80,10 @@ export default function AboutFooter() {
 
         <div className={styles.bottomRow}>
           <p className={styles.bottomText}>
-            Crafted for the global Indian community. Excellence in every union.
+            Aha Kalayanam – Connecting Hearts, Creating Beautiful Relationships.
           </p>
         </div>
+
       </div>
     </footer>
   );

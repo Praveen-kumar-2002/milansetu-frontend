@@ -244,7 +244,7 @@ export default function ContactPage() {
       <footer className={styles.footer}>
         <div className={styles.footerGrid}>
           <div>
-            <div className={styles.footerBrand}>MilanSetu</div>
+            <div className={styles.footerBrand}>Aha Kalayanam</div>
             <p className={styles.footerTagline}>
               Redefining elite matchmaking for the modern world with respect for tradition.
             </p>
@@ -277,7 +277,7 @@ export default function ContactPage() {
         </div>
         <div className={styles.footerBottom}>
           <p className={styles.copyright}>
-            © 2024 Heritage Elite Matrimony. All rights reserved. Designed for the discerning.
+            © 2024 Aha Kalayanam. All Rights Reserved.
           </p>
           <span className={styles.footerTag}>A LEGACY OF LOVE</span>
         </div>

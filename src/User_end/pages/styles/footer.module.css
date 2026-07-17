@@ -125,3 +125,13 @@
     font-size: 12px;
   }
 }
+
+
+.footerLogo{
+    width:220px;
+    height:auto;
+    display:block;
+    margin-bottom:12px;
+
+    transform: translateX(30px);
+}

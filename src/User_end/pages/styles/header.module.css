@@ -1,11 +1,9 @@
 /* ─── Header ─────────────────────────────────────────────── */
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #F6EFE7;
-  border-bottom: 1px solid #e6ddd2;
-  font-family: 'Poppins', system-ui, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
 }
 
 .inner {
@@ -250,3 +248,19 @@
   letter-spacing: 0.5px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoImage {
+    height: 72px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.logoImage:hover {
+  transform: scale(1.03);
+}
