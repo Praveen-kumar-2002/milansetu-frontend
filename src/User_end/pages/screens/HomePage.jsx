@@ -10,15 +10,51 @@ import MobileAppShowcase from '../../components/MobileAppShowcase';
 import styles from '../styles/home_page.module.css';
 import cp from '../styles/curated_profiles.module.css';
 import heroBg from '../../../assets/User_end_assets/hero_bg.png';
+import profile1 from '../../../assets/User_end_assets/Curated Profile1.jpg';
+import profile2 from '../../../assets/User_end_assets/Curated Profile2.jpg';
+import profile3 from '../../../assets/User_end_assets/Curated Profile3.jpg';
+import profile4 from '../../../assets/User_end_assets/Curated Profile4.jpg';
 import AuthenticatedImage from '../../../components/AuthenticatedImage';
 const slides = [0, 1, 2, 3];
  
 /* ─── Curated Profiles data ──────────────────────────────── */
 const profiles = [
-  { id: 1, name: 'Priya S.', age: 27, profession: 'Fashion Designer', city: 'Mumbai', match: '98%' },
-  { id: 2, name: 'Arjun M.', age: 31, profession: 'Tech Lead', city: 'Bangalore', match: '95%' },
-  { id: 3, name: 'Ananya K.', age: 25, profession: 'Architect', city: 'Delhi', match: '92%' },
-  { id: 4, name: 'Rohan V.', age: 29, profession: 'Surgeon', city: 'Chennai', match: '89%' },
+  {
+    id: 1,
+    image: profile1,
+    name: 'Priya S.',
+    age: 27,
+    profession: 'Fashion Designer',
+    city: 'Mumbai',
+    match: '98%',
+  },
+  {
+    id: 2,
+    image: profile2,
+    name: 'Arjun M.',
+    age: 31,
+    profession: 'Tech Lead',
+    city: 'Bangalore',
+    match: '95%',
+  },
+  {
+    id: 3,
+    image: profile3,
+    name: 'Ananya K.',
+    age: 25,
+    profession: 'Architect',
+    city: 'Delhi',
+    match: '92%',
+  },
+  {
+    id: 4,
+    image: profile4,
+    name: 'Rohan V.',
+    age: 29,
+    profession: 'Surgeon',
+    city: 'Chennai',
+    match: '89%',
+  },
 ];
 
 function HeroSection() {
@@ -190,7 +226,11 @@ function CuratedProfiles() {
         {profiles.map((p) => (
           <div key={p.id} className={cp.card}>
               <div className={cp.imageWrap}>
-              <AuthenticatedImage alt={p.name} className={cp.profileImg} />
+              <img
+  src={p.image}
+  alt={p.name}
+  className={cp.profileImg}
+/>
               <span className={cp.verifiedBadge}>
                 <svg className={cp.verifiedTick} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10 3L4.5 8.5L2 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -206,9 +246,15 @@ function CuratedProfiles() {
               <p className={cp.profileDetails}>
                 {p.age} Yrs &bull; {p.profession} &bull; {p.city}
               </p>
-              <button type="button" className={cp.viewProfileBtn}>
-                View Profile
-              </button>
+<button
+  type="button"
+  className={cp.viewProfileBtn}
+  onClick={() => {
+    window.location.hash = '#login';
+  }}
+>
+  View Profile
+</button>
             </div>
           </div>
         ))}

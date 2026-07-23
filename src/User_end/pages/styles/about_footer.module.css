@@ -137,19 +137,13 @@
   }
 }
 
-.pageLogo {
-    width: 220px;
+.pageLogo{
+    width: 210px;
     height: auto;
-    object-fit: contain;
     display: block;
-    margin: 0 auto;
-}
-.pageLogo {
-    width: 240px;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin-bottom: 15px;
+
+    margin-left: 2px;      /* Right కి move అవుతుంది */
+    margin-bottom: 20px;
 }
 
 .emblemText {
@@ -157,4 +151,24 @@
     font-weight: 600;
     letter-spacing: 1px;
     color: #b8860b;
+}
+.footerBrand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footerLogo{
+    width: 260px;   /* 220px నుండి 260px */
+    height: auto;
+    display: block;
+    object-fit: contain;
+
+    transform: translateX(18px);
+}
+.footerBrandText{
+    text-align: center;
+    max-width: 270px;
+    margin: 0 auto;
+    line-height: 1.7;
 }

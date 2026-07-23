@@ -1,54 +1,73 @@
 import styles from '../pages/styles/membership_plans.module.css';
+import { useAuth } from '../../context/AuthContext';
 
 const plans = [
-  {
-    id: 'basic',
-    name: 'Basic',
-    subtitle: 'INTRODUCTION PACK',
-    price: '₹5,000',
-    duration: '/3mo',
-    features: [
-      '10 Express Interests',
-      'Search filters access',
-      'View 5 Contact Details',
-    ],
-    buttonText: 'SELECT PLAN',
-    type: 'basic',
-  },
-  {
-    id: 'premium',
-    name: 'Premium',
-    subtitle: 'ELITE EXPERIENCE',
-    price: '₹12,500',
-    duration: '/6mo',
-    badge: 'MOST POPULAR',
-    features: [
-      'Unlimited Interests',
-      'Profile Spotlight',
-      'View 50 Contact Details',
-      'Message Directly',
-    ],
-    buttonText: 'SELECT PLAN',
-    type: 'premium',
-  },
-  {
-    id: 'elite',
-    name: 'Elite',
-    subtitle: 'CONCIERGE ASSISTED',
-    price: '₹45,000',
-    duration: '/yr',
-    features: [
-      'Personal Relationship Mgr',
-      'Exclusive Offline Matches',
-      'Background Verifications',
-      '1-on-1 Meeting Support',
-    ],
-    buttonText: 'SELECT PLAN',
-    type: 'elite',
-  },
+{
+  id: 'basic',
+  name: 'Basic',
+  subtitle: 'INTRODUCTION PACK',
+  price: '₹3,540',
+  duration: '/Year',
+  features: [
+    '50 Interest Requests',
+    '50 Profile Views',
+    '50 Contact Views',
+    'View Verified Profiles',
+    'Basic Search Filters',
+    'Email Support',
+  ],
+  buttonText: 'SELECT PLAN',
+  type: 'basic',
+},
+{
+  id: 'premium',
+  name: 'Premium',
+  subtitle: 'ELITE EXPERIENCE',
+  price: '₹9999',
+  duration: '/Year',
+  badge: 'MOST POPULAR',
+  features: [
+    'Unlimited Interest Requests',
+    'Unlimited Profile Views',
+    'Unlimited Contact Views',
+    'Unlimited Verified Profile Access',
+    'Advanced Search Filters',
+    'Priority Email Support',
+  ],
+  buttonText: 'SELECT PLAN',
+  type: 'premium',
+},
+{
+  id: 'Elite',
+  name: 'Elite',
+  subtitle: 'PERSONALIZED ASSISTANCE',
+  price: 'Custom Pricing',
+  duration: '',
+  badge: 'CONTACT US',
+  features: [
+    'Unlimited Interest Requests',
+    'Unlimited Profile Views',
+    'Unlimited Contact Views',
+    'Unlimited Verified Profile Access',
+    'Advanced Search Filters',
+    'Dedicated Customer Support',
+  ],
+  buttonText: 'CONTACT SUPPORT',
+  type: 'premium',
+},
 ];
 
 export default function MembershipPlans() {
+  const { user } = useAuth();
+const handleButtonClick = () => {
+
+  if (!user) {
+    window.location.hash = "#login";
+    return;
+  }
+
+  window.location.hash = "#payment";
+};
   return (
     <section className={styles.section} id="membership">
       <div className={styles.container}>
@@ -86,9 +105,13 @@ export default function MembershipPlans() {
                   ))}
                 </ul>
 
-                <button type="button" className={styles.button}>
-                  {plan.buttonText}
-                </button>
+<button
+  type="button"
+  className={styles.button}
+  onClick={handleButtonClick}
+>
+  {plan.buttonText}
+</button>
               </div>
             </div>
           ))}

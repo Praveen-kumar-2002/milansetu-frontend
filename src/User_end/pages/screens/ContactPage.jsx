@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from '../../components/Header';
 import styles from '../styles/contact_page.module.css';
 import contactHeroBg from '../../../assets/User_end_assets/contact_Hero Section.jpg';
+import logo from "../../../assets/User_end_assets/aha-footer-logo.png";
 
 export default function ContactPage() {
   const [form, setForm] = useState({
@@ -244,7 +245,13 @@ export default function ContactPage() {
       <footer className={styles.footer}>
         <div className={styles.footerGrid}>
           <div>
-            <div className={styles.footerBrand}>Aha Kalayanam</div>
+            <div className={styles.footerBrand}>
+  <img
+    src={logo}
+    alt="Aha Kalayanam"
+    className={styles.pageLogo}
+  />
+</div>
             <p className={styles.footerTagline}>
               Redefining elite matchmaking for the modern world with respect for tradition.
             </p>

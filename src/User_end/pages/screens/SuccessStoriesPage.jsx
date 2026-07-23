@@ -1,6 +1,7 @@
 import Header from '../../components/Header';
 import styles from '../styles/success_stories_page.module.css';
 import succStoryBg from '../../../assets/User_end_assets/succ_story.png';
+import logo from "../../../assets/User_end_assets/aha-footer-logo.png";
 
 const stories = [
   {
@@ -198,16 +199,24 @@ export default function SuccessStoriesPage() {
           </div>
         </section>
       </main>
+{/* 6. Footer */}
+<footer className={styles.footer}>
+  <div className={styles.footerGrid}>
+    <div>
 
-      {/* 6. Footer */}
-      <footer className={styles.footer}>
-        <div className={styles.footerGrid}>
-          <div>
-            <div className={styles.footerBrand}>Aha kalyanam</div>
-            <p className={styles.footerBrandText}>
-              Curating exceptional unions for the world's most discerning individuals since 1992.
-            </p>
-          </div>
+      <div>
+  <img
+    src={logo}
+    alt="Aha Kalayanam"
+    className={styles.pageLogo}
+  />
+</div>
+
+      <p className={styles.footerBrandText}>
+        Curating exceptional unions for the world's most discerning individuals since 1992.
+      </p>
+
+    </div>
           <div>
             <h4 className={styles.footerColHead}>Quick Links</h4>
             <ul className={styles.footerLinks}>

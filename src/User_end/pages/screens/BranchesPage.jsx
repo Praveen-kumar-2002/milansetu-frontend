@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from '../../components/Header';
 import styles from '../styles/branches_page.module.css';
+import logo from "../../../assets/User_end_assets/aha-footer-logo.png";
 
 // Hero & map
 import branchesBg from '../../../assets/User_end_assets/branches_sec.png';
@@ -219,7 +220,13 @@ export default function BranchesPage() {
       <footer className={styles.footer}>
         <div className={styles.footerGrid}>
           <div>
-            <div className={styles.footerBrand}>Aha Kalayanam</div>
+          <div className={styles.footerBrand}>
+          <img
+            src={logo}
+            alt="Aha Kalayanam"
+            className={styles.pageLogo}
+          />
+        </div>
 <p className={styles.footerBrandText}>
   Aha Kalayanam is dedicated to connecting hearts through trusted, secure, and meaningful matrimonial services across India and worldwide.
 </p>

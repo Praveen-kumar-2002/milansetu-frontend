@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from '../../components/Header';
 import styles from '../styles/membership_page.module.css';
+import logo from "../../../assets/User_end_assets/aha-footer-logo.png";
 
 const pricingPlans = [
   {
@@ -36,7 +37,7 @@ const pricingPlans = [
     featured: true,
   },
   {
-    id: 'elite',
+    id: 'Elite',
     name: 'Elite',
     tagline: 'BESPOKE CONCIERGE',
     price: '₹75,000',
@@ -256,7 +257,13 @@ export default function MembershipPage() {
       <footer className={styles.footer}>
         <div className={styles.footerGrid}>
           <div>
-            <div className={styles.footerBrand}>Aha Kalayanam</div>
+<div className={styles.footerBrand}>
+  <img
+    src={logo}
+    alt="Aha Kalayanam"
+    className={styles.pageLogo}
+  />
+</div>
             <p className={styles.footerBrandText}>
               Redefining traditional matchmaking through modern prestige and exclusive connections.
             </p>

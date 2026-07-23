@@ -628,3 +628,10 @@
     align-items: stretch;
   }
 }
+.pageLogo {
+    width: 210px;
+    height: auto;
+    display: block;
+    margin-left: 2px;
+    margin-bottom: 20px;
+}

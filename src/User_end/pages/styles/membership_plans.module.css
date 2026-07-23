@@ -51,6 +51,8 @@
   flex-direction: column;
   position: relative;
   z-index: 2;
+  height: 100%;
+  min-height: 260px;
 }
 
 .cardHeader {
@@ -139,6 +141,8 @@
 .basicCard {
   background: #F5F5F5;
   box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .basicCard .planName {
