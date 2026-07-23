@@ -167,6 +167,7 @@
   margin-bottom: 30px;
   padding-bottom: 24px;
   border-bottom: 1px solid #EAE2DD;
+  white-space: nowrap;
 }
 
 .priceValue {
@@ -185,8 +186,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 40px;
-  flex: 1;
+  margin-bottom: 32px;
 }
 
 .featureItem {
@@ -240,6 +240,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  margin-top: 0;
 }
 
 .btnGoldOutlined {
