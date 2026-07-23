@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from '../../components/Header';
 import styles from '../styles/membership_page.module.css';
 import logo from "../../../assets/User_end_assets/aha-footer-logo.png";
+import MembershipPlans from "../../components/MembershipPlans";
 
 const pricingPlans = [
   {
@@ -94,47 +95,7 @@ export default function MembershipPage() {
           </p>
         </section>
 
-        {/* 2. Pricing Cards Row */}
-        <section className={styles.pricingSection}>
-          {pricingPlans.map((plan) => (
-            <div
-              key={plan.id}
-              className={`${styles.card} ${plan.featured ? styles.premiumCard : ''} ${plan.dark ? styles.eliteCard : ''}`}
-            >
-              {plan.featured && <div className={styles.bestValueBadge}>BEST VALUE</div>}
-              <h2 className={styles.cardLabel}>{plan.name}</h2>
-              <span className={styles.cardTagline}>{plan.tagline}</span>
-              
-              <div className={styles.priceWrapper}>
-                <span className={styles.price}>{plan.price}</span>
-                <span className={styles.priceSuffix}>{plan.duration}</span>
-              </div>
-
-              <ul className={styles.featureList}>
-                {plan.features.map((feature, idx) => (
-                  <li
-                    key={idx}
-                    className={`${styles.featureItem} ${!feature.active ? styles.inactiveFeature : ''}`}
-                  >
-                    {feature.active ? (
-                      <span className={styles.checkIcon}>✓</span>
-                    ) : (
-                      <span className={styles.dashIcon}>—</span>
-                    )}
-                    {feature.text}
-                  </li>
-                ))}
-              </ul>
-
-              <button
-                className={`${styles.selectBtn} ${plan.btnClass}`}
-                onClick={() => handleSelect(plan.name)}
-              >
-                {plan.buttonText}
-              </button>
-            </div>
-          ))}
-        </section>
+   <MembershipPlans />
 
         {/* 3. Detailed Comparison Table */}
         <section className={styles.comparisonSection}>
@@ -160,14 +121,14 @@ export default function MembershipPage() {
                 </tr>
                 <tr>
                   <td className={`${styles.td} ${styles.tdFirst}`}>Interests Shared</td>
-                  <td className={styles.td}>25 per month</td>
+                  <td className={styles.td}>50 per month</td>
                   <td className={styles.td}>Unlimited</td>
                   <td className={styles.td}>Unlimited</td>
                 </tr>
                 <tr>
                   <td className={`${styles.td} ${styles.tdFirst}`}>Contact Views</td>
-                  <td className={styles.td}>10 Total</td>
                   <td className={styles.td}>50 Total</td>
+                  <td className={styles.td}>Unlimited</td>
                   <td className={styles.td}>Unlimited</td>
                 </tr>
                 <tr>
