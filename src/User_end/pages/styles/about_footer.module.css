@@ -1,174 +1,116 @@
+/* Footer */
 .footer {
   width: 100%;
-  padding: 64px 0 32px 0;
   background: #0F1A30;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content: center;
+  padding: 70px 8%;
+  font-family: "Poppins", sans-serif;
 }
 
-.container {
-  width: 1360px;
-  max-width: 100%;
-  padding: 0 40px;
-  display: flex;
-  flex-direction: column;
+.footerGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 50px;
 }
 
-.topRow {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
+.footerBrand {
+  margin-bottom: 20px;
 }
 
-/* ─── Column 1: Brand ─── */
-.brandCol {
-  width: 30%;
-  min-width: 280px;
+.pageLogo {
+  width: 220px;
+  height: auto;
 }
 
-.logo {
-  font-size: 26px;
-  font-weight: 800;
-  color: #C9A04E;
-  margin-bottom: 16px;
-}
-
-.copyright {
+.footerBrandText {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
   font-size: 15px;
-  font-weight: 400;
-  font-style: italic;
-  color: #B8BCC8; /* rgba(255,255,255,0.6) equivalent */
-  line-height: 1.6;
-  max-width: 340px;
-  margin: 0 0 28px 0;
+  max-width: 320px;
 }
 
-.brandEmblem {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.emblemIcon {
-  width: 28px;
-  height: 28px;
-  color: #C9A04E;
-}
-
-.emblemText {
-  font-size: 22px;
-  font-weight: 300; /* thin/light */
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #C9A04E;
-}
-
-/* ─── Columns 2 & 3: Links ─── */
-.linksCol {
-  width: 30%;
-  min-width: 200px;
-}
-
-.heading {
-  font-size: 14px;
+.footerColHead {
+  color: #ffffff;
+  font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #C9A04E;
-  margin: 0 0 20px 0;
+  margin-bottom: 22px;
 }
 
-.list {
+.footerLinks {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
 
-.link {
-  font-size: 15px;
-  font-weight: 600;
-  color: #FFFFFF;
+.footerLinkItem {
+  margin-bottom: 12px;
+}
+
+.footerLink {
   text-decoration: none;
-  transition: color 0.2s ease;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s;
 }
 
-.link:hover {
+.footerLink:hover {
   color: #C9A04E;
 }
 
-/* ─── Divider & Bottom ─── */
-.divider {
-  width: 100%;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.08);
-  margin: 48px 0;
+.footerContact {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-.bottomRow {
+.footerContactItem {
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footerIcon {
+  color: #C9A04E;
+}
+
+.footerBottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 50px;
+  padding-top: 25px;
   text-align: center;
 }
 
-.bottomText {
+.footerCopyright {
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
-  font-weight: 400;
-  color: #6B7488;
   margin: 0;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .topRow {
-    flex-direction: column;
-  }
-  .brandCol, .linksCol {
-    width: 100%;
+@media (max-width: 992px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 0 24px;
+  .footer {
+    padding: 50px 24px;
+  }
+
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .pageLogo {
+    width: 180px;
+  }
+
+  .footerBottom {
+    margin-top: 35px;
   }
 }
 
-.pageLogo{
-    width: 210px;
-    height: auto;
-    display: block;
-
-    margin-left: 2px;      /* Right కి move అవుతుంది */
-    margin-bottom: 20px;
-}
-
-.emblemText {
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #b8860b;
-}
-.footerBrand{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.footerLogo{
-    width: 260px;   /* 220px నుండి 260px */
-    height: auto;
-    display: block;
-    object-fit: contain;
-
-    transform: translateX(18px);
-}
-.footerBrandText{
-    text-align: center;
-    max-width: 270px;
-    margin: 0 auto;
-    line-height: 1.7;
-}
+  .footerBottom {
+    margin-top: 35px;
+  }

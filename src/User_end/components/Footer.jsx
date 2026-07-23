@@ -3,114 +3,101 @@ import logo from "../../assets/User_end_assets/aha-footer-logo.png";
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
-
-        {/* Left Side: Brand & Copyright */}
-        <div className={styles.leftSide}>
-
-          <img
-            src={logo}
-            alt="Aha Kalayanam"
-            className={styles.footerLogo}
-          />
-
-          <p className={styles.copyright}>
-            © 2026 Aha Kalayanam. Trusted Indian Matrimonial Services.
-            All Rights Reserved.
-          </p>
-
-        </div>
-
-        {/* Center Side */}
-        <div className={styles.centerSide}>
-          <nav className={styles.nav}>
-            <a href="#contact" className={styles.navLink}>
-              CONTACT
-            </a>
-
-            <a href="#terms" className={styles.navLink}>
-              TERMS OF SERVICE
-            </a>
-
-            <a href="#privacy" className={styles.navLink}>
-              PRIVACY POLICY
-            </a>
-
-            <a href="#cookie" className={styles.navLink}>
-              COOKIE POLICY
-            </a>
-          </nav>
-
-          <a href="#safety" className={styles.safetyLink}>
-            SAFETY TIPS
-          </a>
-        </div>
-
-        {/* Right Side */}
-        <div className={styles.rightSide}>
-
-          <a
-            href="#website"
-            aria-label="Website"
-            className={styles.socialIcon}
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <line x1="2" y1="12" x2="22" y2="12" />
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-            </svg>
-          </a>
-
-          <a
-            href="mailto:info@ahakalayanam.com"
-            aria-label="Email"
-            className={styles.socialIcon}
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <polyline points="22,6 12,13 2,6" />
-            </svg>
-          </a>
-
-          <a
-            href="#share"
-            aria-label="Share"
-            className={styles.socialIcon}
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <circle cx="18" cy="5" r="3" />
-              <circle cx="6" cy="12" r="3" />
-              <circle cx="18" cy="19" r="3" />
-              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
-              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
-            </svg>
-          </a>
-
-        </div>
-
+<footer className={styles.footer}>
+  <div className={styles.footerGrid}>
+    <div>
+      <div className={styles.footerBrand}>
+        <img
+          src={logo}
+          alt="Aha Kalayanam"
+          className={styles.pageLogo}
+        />
       </div>
-    </footer>
+
+      <p className={styles.footerBrandText}>
+        Redefining traditional matchmaking through modern prestige and exclusive
+        connections.
+      </p>
+    </div>
+
+    <div>
+      <h4 className={styles.footerColHead}>Quick Links</h4>
+      <ul className={styles.footerLinks}>
+        <li className={styles.footerLinkItem}>
+          <a href="#membership" className={styles.footerLink}>
+            Membership
+          </a>
+        </li>
+        <li className={styles.footerLinkItem}>
+          <a href="#success" className={styles.footerLink}>
+            Success Stories
+          </a>
+        </li>
+        <li className={styles.footerLinkItem}>
+          <a href="#safety" className={styles.footerLink}>
+            Safety Tips
+          </a>
+        </li>
+        <li className={styles.footerLinkItem}>
+          <a href="#faq" className={styles.footerLink}>
+            FAQ
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 className={styles.footerColHead}>Legal</h4>
+      <ul className={styles.footerLinks}>
+        <li className={styles.footerLinkItem}>
+          <a href="#privacy" className={styles.footerLink}>
+            Privacy Policy
+          </a>
+        </li>
+        <li className={styles.footerLinkItem}>
+          <a href="#terms" className={styles.footerLink}>
+            Terms of Service
+          </a>
+        </li>
+        <li className={styles.footerLinkItem}>
+          <a href="#cookie" className={styles.footerLink}>
+            Cookie Policy
+          </a>
+        </li>
+        <li className={styles.footerLinkItem}>
+          <a href="#grievance" className={styles.footerLink}>
+            Grievance Redressal
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 className={styles.footerColHead}>Contact</h4>
+      <div className={styles.footerContact}>
+        <div className={styles.footerContactItem}>
+          <span className={styles.footerIcon}>✉</span>
+          support@heritageelite.com
+        </div>
+
+        <div className={styles.footerContactItem}>
+          <span className={styles.footerIcon}>📞</span>
+          1-800-PRESTIGE
+        </div>
+
+        <div className={styles.footerContactItem}>
+          <span className={styles.footerIcon}>🌐</span>
+          Worldwide Support
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className={styles.footerBottom}>
+    <p className={styles.footerCopyright}>
+      © 2024 Aha Kalyanam. All rights reserved. Designed for the discerning.
+    </p>
+  </div>
+</footer>
   );
 }

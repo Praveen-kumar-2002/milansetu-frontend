@@ -217,31 +217,75 @@ export default function SuccessStoriesPage() {
       </p>
 
     </div>
-          <div>
-            <h4 className={styles.footerColHead}>Quick Links</h4>
-            <ul className={styles.footerLinks}>
-              <li className={styles.footerLinkItem}><a href="#success" className={styles.footerLink}>Success Stories</a></li>
-              <li className={styles.footerLinkItem}><a href="#membership" className={styles.footerLink}>Membership Plans</a></li>
-              <li className={styles.footerLinkItem}><a href="#branches" className={styles.footerLink}>Global Branches</a></li>
-              <li className={styles.footerLinkItem}><a href="#faq" className={styles.footerLink}>FAQ</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className={styles.footerColHead}>Support</h4>
-            <ul className={styles.footerLinks}>
-              <li className={styles.footerLinkItem}><a href="#safety" className={styles.footerLink}>Safety Tips</a></li>
-              <li className={styles.footerLinkItem}><a href="#grievance" className={styles.footerLink}>Grievance Redressal</a></li>
-              <li className={styles.footerLinkItem}><a href="#contact" className={styles.footerLink}>Contact Us</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className={styles.footerColHead}>Legal</h4>
-            <ul className={styles.footerLinks}>
-              <li className={styles.footerLinkItem}><a href="#privacy" className={styles.footerLink}>Privacy Policy</a></li>
-              <li className={styles.footerLinkItem}><a href="#terms" className={styles.footerLink}>Terms of Service</a></li>
-              <li className={styles.footerLinkItem}><a href="#cookie" className={styles.footerLink}>Cookie Policy</a></li>
-            </ul>
-          </div>
+<div>
+  <h4 className={styles.footerColHead}>Quick Links</h4>
+
+  <ul className={styles.footerLinks}>
+    <li className={styles.footerLinkItem}>
+      <a href="#success" className={styles.footerLink}>Success Stories</a>
+    </li>
+
+    <li className={styles.footerLinkItem}>
+      <a href="#membership" className={styles.footerLink}>Membership Plans</a>
+    </li>
+
+    <li className={styles.footerLinkItem}>
+      <a href="#branches" className={styles.footerLink}>Global Branches</a>
+    </li>
+
+    <li className={styles.footerLinkItem}>
+      <a href="#faq" className={styles.footerLink}>FAQ</a>
+    </li>
+  </ul>
+</div>
+<div>
+  <h4 className={styles.footerColHead}>Legal</h4>
+
+  <ul className={styles.footerLinks}>
+    <li className={styles.footerLinkItem}>
+      <a href="#privacy" className={styles.footerLink}>Privacy Policy</a>
+    </li>
+
+    <li className={styles.footerLinkItem}>
+      <a href="#terms" className={styles.footerLink}>Terms of Service</a>
+    </li>
+
+    <li className={styles.footerLinkItem}>
+      <a href="#cookie" className={styles.footerLink}>Cookie Policy</a>
+    </li>
+
+    <li className={styles.footerLinkItem}>
+      <a href="#grievance" className={styles.footerLink}>Grievance Redressal</a>
+    </li>
+  </ul>
+</div>
+
+
+<div>
+  <h4 className={styles.footerColHead}>Contact</h4>
+
+  <ul className={styles.footerLinks}>
+    <li className={styles.footerLinkItem}>
+      <a href="mailto:support@heritageelite.com" className={styles.footerLink}>
+        support@heritageelite.com
+      </a>
+    </li>
+
+    <li className={styles.footerLinkItem}>
+      <a href="tel:1800777378443" className={styles.footerLink}>
+        1-800-PRESTIGE
+      </a>
+    </li>
+
+    <li className={styles.footerLinkItem}>
+      <a href="#" className={styles.footerLink}>
+        Worldwide Support
+      </a>
+    </li>
+  </ul>
+</div>
+
+
         </div>
         <div className={styles.footerBottom}>
           <p className={styles.footerCopyright}>

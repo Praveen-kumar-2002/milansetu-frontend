@@ -82,101 +82,199 @@ const SubscriptionPlansPage = () => {
             
             {/* Gold Card */}
             <div className={styles.pricingCard}>
-              <div className={styles.planLabel}>PREMIUM ESSENTIAL</div>
-              <div className={styles.planName}>Gold</div>
-              <div className={styles.priceBlock}>
-                <span className={styles.priceValue}>₹9,999</span>
-                <span className={styles.pricePeriod}> / 3 months</span>
-              </div>
-              
-              <div className={styles.featureList}>
-                <div className={styles.featureItem}>
-                  <div className={styles.checkIconCircle}><Icons.Check /></div>
-                  <span>Send unlimited interests</span>
-                </div>
-                <div className={styles.featureItem}>
-                  <div className={styles.checkIconCircle}><Icons.Check /></div>
-                  <span>View contact details (up to 50)</span>
-                </div>
-                <div className={styles.featureItem}>
-                  <div className={styles.checkIconCircle}><Icons.Check /></div>
-                  <span>Standout profile badge</span>
-                </div>
-                <div className={`${styles.featureItem} ${styles.featureDisabled}`}>
-                  <div className={styles.crossIconCircle}><Icons.Cross /></div>
-                  <span>Personal manager</span>
-                </div>
-              </div>
-              
-              <a href="#payment" className={`${styles.actionBtn} ${styles.btnGoldOutlined}`}>Select Gold</a>
-            </div>
+<div className={styles.planLabel}>
+  INTRODUCTION PACK
+</div>
 
-            {/* Diamond Card */}
-            <div className={`${styles.pricingCard} ${styles.diamondCard}`}>
-              <div className={styles.popularBadge}>MOST POPULAR</div>
-              <div className={styles.planLabel}>THE ELITE CHOICE</div>
-              <div className={styles.planName}>Diamond</div>
-              <div className={styles.priceBlock}>
-                <span className={styles.priceValue}>₹19,999</span>
-                <span className={styles.pricePeriod}> / 6 months</span>
-              </div>
-              
-              <div className={styles.featureList}>
-                <div className={`${styles.featureItem} ${styles.featureBold}`}>
-                  <div className={styles.checkIconCircle}><Icons.Check /></div>
-                  <span>Top search placement</span>
-                </div>
-                <div className={styles.featureItem}>
-                  <div className={styles.checkIconCircle}><Icons.Check /></div>
-                  <span>View contact details (up to 150)</span>
-                </div>
-                <div className={styles.featureItem}>
-                  <div className={styles.checkIconCircle}><Icons.Check /></div>
-                  <span>Profile highlighting</span>
-                </div>
-                <div className={styles.featureItem}>
-                  <div className={styles.checkIconCircle}><Icons.Check /></div>
-                  <span>Dedicated Relationship Manager</span>
-                </div>
-              </div>
-              
-              <a href="#payment" className={`${styles.actionBtn} ${styles.btnDiamondFilled}`}>Begin Diamond Journey</a>
-            </div>
 
-            {/* Platinum Card */}
-            <div className={styles.pricingCard}>
-              <div className={styles.planLabel}>ULTIMATE CONCIERGE</div>
-              <div className={styles.planName}>Platinum</div>
-              <div className={styles.priceBlock}>
-                <span className={styles.priceValue}>₹34,999</span>
-                <span className={styles.pricePeriod}> / 12 months</span>
-              </div>
+              <div className={styles.planName}>
+  Basic
+</div>
+             <div className={styles.priceBlock}>
+  <span className={styles.priceValue}>
+    ₹3,540
+  </span>
+
+  <span className={styles.pricePeriod}>
+    / Year
+  </span>
+</div>
+
               
-              <div className={styles.featureList}>
-                <div className={styles.featureItem}>
-                  <div className={styles.checkIconCircle}><Icons.Check /></div>
-                  <span>Unlimited everything</span>
-                </div>
-                <div className={styles.featureItem}>
-                  <div className={styles.checkIconCircle}><Icons.Check /></div>
-                  <span>Exclusive offline events</span>
-                </div>
-                <div className={styles.featureItem}>
-                  <div className={styles.checkIconCircle}><Icons.Check /></div>
-                  <span>Astro-matchmaking included</span>
-                </div>
-                <div className={`${styles.featureItem} ${styles.featureBold}`}>
-                  <div className={styles.checkIconCircle}><Icons.Check /></div>
-                  <span>Handpicked introductions</span>
-                </div>
-                <div className={`${styles.featureItem} ${styles.featureBold}`}>
-                  <div className={styles.checkIconCircle}><Icons.Check /></div>
-                  <span>100% Privacy Control</span>
-                </div>
-              </div>
               
-              <a href="#payment" className={`${styles.actionBtn} ${styles.btnPlatinumOutlined}`}>Experience Platinum</a>
+<div className={styles.featureItem}>
+  <div className={styles.checkIconCircle}>
+    <Icons.Check />
+  </div>
+  <span>50 Interest Requests</span>
+</div>
+
+<div className={styles.featureItem}>
+  <div className={styles.checkIconCircle}>
+    <Icons.Check />
+  </div>
+  <span>50 Profile Views</span>
+</div>
+
+<div className={styles.featureItem}>
+  <div className={styles.checkIconCircle}>
+    <Icons.Check />
+  </div>
+  <span>50 Contact Views</span>
+</div>
+
+<div className={styles.featureItem}>
+  <div className={styles.checkIconCircle}>
+    <Icons.Check />
+  </div>
+  <span>View Verified Profiles</span>
+</div>
+
+<div className={styles.featureItem}>
+  <div className={styles.checkIconCircle}>
+    <Icons.Check />
+  </div>
+  <span>Basic Search Filters</span>
+</div>
+
+<div className={styles.featureItem}>
+  <div className={styles.checkIconCircle}>
+    <Icons.Check />
+  </div>
+  <span>Email Support</span>
+</div>
+              
+              <a href="#payment" className={`${styles.actionBtn} ${styles.btnGoldOutlined}`}>SELECT PLAN</a>
             </div>
+{/* Premium Card */}
+<div className={`${styles.pricingCard} ${styles.diamondCard}`}>
+  <div className={styles.popularBadge}>MOST POPULAR</div>
+
+  <div className={styles.planLabel}>ELITE EXPERIENCE</div>
+  <div className={styles.planName}>Premium</div>
+
+  <div className={styles.priceBlock}>
+    <span className={styles.priceValue}>₹9999</span>
+    <span className={styles.pricePeriod}> / Year</span>
+  </div>
+
+  <div className={styles.featureList}>
+    <div className={styles.featureItem}>
+      <div className={styles.checkIconCircle}>
+        <Icons.Check />
+      </div>
+      <span>Unlimited Interest Requests</span>
+    </div>
+
+    <div className={styles.featureItem}>
+      <div className={styles.checkIconCircle}>
+        <Icons.Check />
+      </div>
+      <span>Unlimited Profile Views</span>
+    </div>
+
+    <div className={styles.featureItem}>
+      <div className={styles.checkIconCircle}>
+        <Icons.Check />
+      </div>
+      <span>Unlimited Contact Views</span>
+    </div>
+
+    <div className={styles.featureItem}>
+      <div className={styles.checkIconCircle}>
+        <Icons.Check />
+      </div>
+      <span>Unlimited Verified Profile Access</span>
+    </div>
+
+    <div className={styles.featureItem}>
+      <div className={styles.checkIconCircle}>
+        <Icons.Check />
+      </div>
+      <span>Advanced Search Filters</span>
+    </div>
+
+    <div className={styles.featureItem}>
+      <div className={styles.checkIconCircle}>
+        <Icons.Check />
+      </div>
+      <span>Priority Email Support</span>
+    </div>
+  </div>
+
+  <a
+    href="#payment"
+    className={`${styles.actionBtn} ${styles.btnDiamondFilled}`}
+  >
+    SELECT PLAN
+  </a>
+</div>
+
+
+
+{/* Elite Card */}
+<div className={styles.pricingCard}>
+  <div className={styles.popularBadge}>CONTACT US</div>
+
+  <div className={styles.planLabel}>PERSONALIZED ASSISTANCE</div>
+  <div className={styles.planName}>Elite</div>
+
+  <div className={styles.priceBlock}>
+    <span className={styles.priceValue}>Custom Pricing</span>
+    <span className={styles.pricePeriod}></span>
+  </div>
+
+  <div className={styles.featureList}>
+    <div className={styles.featureItem}>
+      <div className={styles.checkIconCircle}>
+        <Icons.Check />
+      </div>
+      <span>Unlimited Interest Requests</span>
+    </div>
+
+    <div className={styles.featureItem}>
+      <div className={styles.checkIconCircle}>
+        <Icons.Check />
+      </div>
+      <span>Unlimited Profile Views</span>
+    </div>
+
+    <div className={styles.featureItem}>
+      <div className={styles.checkIconCircle}>
+        <Icons.Check />
+      </div>
+      <span>Unlimited Contact Views</span>
+    </div>
+
+    <div className={styles.featureItem}>
+      <div className={styles.checkIconCircle}>
+        <Icons.Check />
+      </div>
+      <span>Unlimited Verified Profile Access</span>
+    </div>
+
+    <div className={styles.featureItem}>
+      <div className={styles.checkIconCircle}>
+        <Icons.Check />
+      </div>
+      <span>Advanced Search Filters</span>
+    </div>
+
+    <div className={styles.featureItem}>
+      <div className={styles.checkIconCircle}>
+        <Icons.Check />
+      </div>
+      <span>Dedicated Customer Support</span>
+    </div>
+  </div>
+
+  <a
+    href="#payment"
+    className={`${styles.actionBtn} ${styles.btnPlatinumOutlined}`}
+  >
+    CONTACT SUPPORT
+  </a>
+</div>
 
           </div>
 

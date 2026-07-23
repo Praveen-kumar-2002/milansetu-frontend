@@ -216,70 +216,116 @@ export default function BranchesPage() {
         </section>
       </main>
 
-      {/* 5. Footer */}
-      <footer className={styles.footer}>
-        <div className={styles.footerGrid}>
-          <div>
-          <div className={styles.footerBrand}>
-          <img
-            src={logo}
-            alt="Aha Kalayanam"
-            className={styles.pageLogo}
-          />
-        </div>
-<p className={styles.footerBrandText}>
-  Aha Kalayanam is dedicated to connecting hearts through trusted, secure, and meaningful matrimonial services across India and worldwide.
-</p>
-            <div className={styles.footerSocials}>
-              <span className={styles.footerSocialIcon}>🌐</span>
-              <span className={styles.footerSocialIcon}>✉</span>
-              <span className={styles.footerSocialIcon}>📞</span>
-            </div>
-          </div>
-          <div>
-            <h4 className={styles.footerColHead}>Quick Links</h4>
-            <ul className={styles.footerLinks}>
-              <li className={styles.footerLinkItem}><a href="#privacy" className={styles.footerLink}>Privacy Policy</a></li>
-              <li className={styles.footerLinkItem}><a href="#terms" className={styles.footerLink}>Terms of Service</a></li>
-              <li className={styles.footerLinkItem}><a href="#cookie" className={styles.footerLink}>Cookie Policy</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className={styles.footerColHead}>Resources</h4>
-            <ul className={styles.footerLinks}>
-              <li className={styles.footerLinkItem}><a href="#grievance" className={styles.footerLink}>Grievance Redressal</a></li>
-              <li className={styles.footerLinkItem}><a href="#safety" className={styles.footerLink}>Safety Tips</a></li>
-              <li className={styles.footerLinkItem}><a href="#faq" className={styles.footerLink}>FAQ</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className={styles.footerColHead}>NEWSLETTER</h4>
-            <p className={styles.newsletterText}>Subscribe for elite relationship insights.</p>
-            {newsletterStatus === 'success' ? (
-              <p className={styles.successMsg}>Thank you for subscribing!</p>
-            ) : (
-              <form onSubmit={handleNewsletter}>
-                <div className={styles.newsletterRow}>
-                  <input 
-                    type="email" 
-                    placeholder="Email Address" 
-                    className={styles.newsletterInput}
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                  <button type="submit" className={styles.newsletterBtn}>Join</button>
-                </div>
-                {newsletterStatus === 'error' && <p className={styles.errorMsg}>Please enter your email</p>}
-              </form>
-            )}
-          </div>
-        </div>
-        <div className={styles.footerBottom}>
-          <p className={styles.footerCopyright}>
-           © 2026 Aha Kalayanam. All Rights Reserved. Trusted Matrimonial Services.
-          </p>
-        </div>
-      </footer>
+{/* 5. Footer */}
+<footer className={styles.footer}>
+  <div className={styles.footerGrid}>
+
+    {/* Brand */}
+    <div>
+      <div className={styles.footerBrand}>
+        <img
+          src={logo}
+          alt="Aha Kalayanam"
+          className={styles.pageLogo}
+        />
+      </div>
+
+      <p className={styles.footerBrandText}>
+        Curating exceptional unions for the world's most discerning individuals
+        since 1992.
+      </p>
+    </div>
+
+    {/* Quick Links */}
+    <div>
+      <h4 className={styles.footerColHead}>Quick Links</h4>
+
+      <ul className={styles.footerLinks}>
+        <li className={styles.footerLinkItem}>
+          <a href="#success" className={styles.footerLink}>
+            Success Stories
+          </a>
+        </li>
+
+        <li className={styles.footerLinkItem}>
+          <a href="#membership" className={styles.footerLink}>
+            Membership Plans
+          </a>
+        </li>
+
+        <li className={styles.footerLinkItem}>
+          <a href="#branches" className={styles.footerLink}>
+            Global Branches
+          </a>
+        </li>
+
+        <li className={styles.footerLinkItem}>
+          <a href="#faq" className={styles.footerLink}>
+            FAQ
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    {/* Legal */}
+    <div>
+      <h4 className={styles.footerColHead}>Legal</h4>
+
+      <ul className={styles.footerLinks}>
+        <li className={styles.footerLinkItem}>
+          <a href="#privacy" className={styles.footerLink}>
+            Privacy Policy
+          </a>
+        </li>
+
+        <li className={styles.footerLinkItem}>
+          <a href="#terms" className={styles.footerLink}>
+            Terms of Service
+          </a>
+        </li>
+
+        <li className={styles.footerLinkItem}>
+          <a href="#cookie" className={styles.footerLink}>
+            Cookie Policy
+          </a>
+        </li>
+      </ul>
+    </div>
+
+{/* Contact */}
+<div>
+  <h4 className={styles.footerColHead}>Contact</h4>
+
+  <ul className={styles.footerLinks}>
+    <li className={styles.footerLinkItem}>
+      <a href="mailto:support@heritageelite.com" className={styles.footerLink}>
+        support@heritageelite.com
+      </a>
+    </li>
+
+    <li className={styles.footerLinkItem}>
+      <a href="tel:1800777378443" className={styles.footerLink}>
+        1-800-PRESTIGE
+      </a>
+    </li>
+
+    <li className={styles.footerLinkItem}>
+      <a href="#" className={styles.footerLink}>
+        Worldwide Support
+      </a>
+    </li>
+  </ul>
+</div>
+
+</div> {/* <-- footerGrid close చేయాలి */}
+
+<div className={styles.footerBottom}>
+  <p className={styles.footerCopyright}>
+    © 2026 Aha Kalayanam. All rights reserved.
+  </p>
+</div>
+
+</footer>
     </div>
   );
 }
